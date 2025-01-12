@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic_Tac_Toe</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navbar styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222;
+            padding: 10px 20px;
+            font-family: Arial, sans-serif;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            color: #08D9D6;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #08D9D6;
+        }
+        .navbar .menu {
+            display: flex;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="navbar" style="padding-top: 20px ;">
+        <div class="logo" style="margin-bottom: 15px; margin-left: 14px; font-size: 30px; font-weight: bold;">
+            <span style="color: #FF2E63;">Tic</span>
+            <span style="color: white;">Tac</span>
+            <span style="color: #08D9D6;">Toe</span>
+        </div>
+        <div class="menu">
+            <a href="#game" style="margin-bottom: 15px; color:#FF2E63; font-size: 17px;">Game</a>
+            <a href="#difficulty" style="margin-bottom: 15px; color:white; font-size: 17px">Difficulty</a>
+            <a href="#results" style="margin-bottom: 15px; color:#08D9D6; font-size: 17px">Results</a>
+        </div>
+    </div>
+    <br>
     <div class="turn-container">
         <h3>Turn For</h3>
         <div class="turn-box align">X</div>
@@ -25,8 +67,17 @@
         <div class="box align">7</div>
         <div class="box align">8</div>
     </div>
+    <select 
+        id="difficulty">
+        <option value="easy" style="color: black; font-weight: bold;">Easy</option>
+        <option value="medium" style="color: black; font-weight: bold;">Medium</option>
+        <option value="hard" style="color: black; font-weight: bold;">Hard</option>
+    </select>
+
     <h2 id="results"></h2>
     <button id="play-again">Play Again</button>
     <script src="script.js"></script>
+    <br><br><br>    
+    <div>2025 Tic Tac Toe Game. All rights reserved.</div>
 </body>
 </html>

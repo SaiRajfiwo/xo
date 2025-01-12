@@ -85,10 +85,27 @@ body{
     border-radius: 5px;
     cursor: pointer;
     display: none;
+    font-weight: bold;
 }
 
 #play-again:hover{
     padding: 10px 40px;
+    background-color: #08D9D6;
+    color: #000;
+}
+
+#difficulty{
+    font-size: 18px; 
+    font-weight: bold; 
+    color: white; 
+    background-color: #FF2E63; 
+    border: 2px solid #000;  
+    padding: 6px 10px; 
+    cursor: pointer;
+}
+
+#difficulty:hover{
+    padding: 6px 17px;
     background-color: #08D9D6;
     color: #000;
 }
